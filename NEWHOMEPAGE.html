@@ -1,0 +1,179 @@
+
+<h1 align="center"> Welcome to Morkel Visual Studios </h1>
+
+
+<title> Morkel Visual Studio </title>
+
+
+	<p align="center"> Welcome to Morkel Visual Studios, a haven for excellent designs for your business, a superb service for all your designing needs! </p>
+
+	<p align="center"> We are a small, budding graphic design & video editing company based in Ballito, South Africa, <br>ready to take on the task of creating the best logo, or doing some snazzy editing on your video projects. <br>We take pride in every single design that we create. <b> We hope you as our clients, will be highly satisfied with our designs & editing, so that your business can thrive! </p>	
+    <p align="center"> *Note, An Account is R150p/month*</p>
+        <section>
+	
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact Button</title>
+                <style>
+                    .contact-button {
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        font-size: 16px;
+                    }
+                </style>
+            </head>
+            <body>
+                <a href="ContactInfo.html" class="contact-button">Contact Us</a>
+            </body>
+
+	</section>
+	<section>
+	
+        <a href="pricing.html" class="pricing-button">View Pricing</a>
+
+        <style>
+        .pricing-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .pricing-button:hover {
+            background-color: #45a049;
+        }
+        </style>
+
+	</section>
+
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Stylish Account Creator</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; }
+                .container { max-width: 400px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+                input { margin: 10px 0; padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 4px; }
+                button { padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+                button:hover { background-color: #218838; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Create Your Account</h1>
+                <form id="accountForm">
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Create Account <i class="fas fa-user-plus"></i></button>
+                </form>
+                <script>
+                    document.getElementById('accountForm').onsubmit = function(event) {
+                        event.preventDefault();
+                        alert('Account created successfully!');
+                    };
+                </script>
+            </div>
+        </body>
+
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Login</title>
+            </head>
+            <body>
+                <h1>Login</h1>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+            
+                <script>
+                    document.getElementById('loginForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        // Simulate successful login
+                        window.location.href = 'order-history.html';
+                    });
+                </script>
+            </body>
+            </html>
+            
+            <!-- ORDERHISTORY.html -->
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Order History</title>
+            </head>
+            <body>
+                <h1>Your Order History</h1>
+                <p>Here is the list of your previous orders:</p>
+                <!-- Order details would be dynamically generated here -->
+            </body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Orders</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2196F3;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History Button</title>
+    <style>
+        .order-history-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .order-history-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+    <button class="order-history-button" onclick="window.location.href='ORDERHISTORY.html'">View Order History</button>
+</body>
